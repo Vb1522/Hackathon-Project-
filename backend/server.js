@@ -6,7 +6,9 @@ import connectCloudinary from './config/cloudinary.js'
 import adminRouter from './routes/adminRoute.js'
 import doctorRouter from './routes/doctorRoute.js'
 import userRouter from './routes/userRoute.js'
+import dns from 'dns';
 
+dns.setServers(["1.1.1.1","8.8.8.8"]);
 
 // app config
 const app = express()
